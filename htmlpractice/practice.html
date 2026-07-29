@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title> HTML PRACTICE </title>
+    
+        <style> 
+
+            table, tr, th, td 
+            {
+
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-collapse: collapse; /* to remove double lines */
+
+            }
+
+            caption 
+            { 
+
+                text-align: left;
+                caption-side: top;
+            
+            }
+
+
+            .colored-table thead 
+            {
+    
+                background-color: red;
+
+            }
+
+            .colored-table tbody 
+            {
+                
+                background-color: blue;
+
+            }
+
+            .colored-table tfoot 
+            {
+
+                background-color: yellow;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body> 
+        
+        <h1> • ATTRIBUTES AND LINKING </h1>
+
+        <!-- href - value of a URL or file path -->
+
+        <!-- href without target -->
+
+        <h5> * without target * </h5>
+
+        <p> To YouTube: <a href = "https://www.youtube.com/watch?v=EP8JQhiQb4Q&list=PLVnJhHoKgEmqJul8qc11jibcZXiPTgbR5&index=3"> YouTube </a> </p>
+    
+        <!-- href with target (_blank) -->
+
+        <h5> * href with target ( _blank ) * </h5>
+
+        <p> New Tab: <a href = "https://www.youtube.com/watch?v=EP8JQhiQb4Q&list=PLVnJhHoKgEmqJul8qc11jibcZXiPTgbR5&index=3" target = "_blank"> YouTube </a> </p>
+    
+        <!-- href with target (_self) -->
+
+        <h5> * href with target ( _self ) * </h5>
+
+        <p> Stays on Tab: <a href = "https://www.youtube.com/watch?v=EP8JQhiQb4Q&list=PLVnJhHoKgEmqJul8qc11jibcZXiPTgbR5&index=3" target = "_self"> YouTube </a> </p>
+
+    <br>
+
+        <h1> • IMAGES AND FILE PATHS </h1>
+
+        <!-- src - value of a URL or file path -->
+
+        <h4> Images from same file/path </h4>
+
+        <!-- in pixels -->
+
+        <h5> * in pixels * </h5>
+
+        <img src = "airplane_img1.jpg" width = "350" height = "200" /> 
+
+        <!-- percent means space of screen -->
+
+        <h5> * in percentage ( 50% ) * </h5>
+
+        <img src = "airplane_img1.jpg" width = "50%" /> 
+
+        <h4> Images from the internet </h4>
+
+        <h5> * using the "copy image link" * </h5>
+
+        <img src = "https://th.bing.com/th/id/OIP.NRWj0CqYkx5f-RbJa2GyqwEsDI?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width = "200" alt = "Error" /> 
+
+        <!-- alt will show if there's no connection, the img is gone or the link is broken -->
+
+        <br>
+
+        <h5> * alt is showing because of broken link * </h5>
+
+        <img src = "https://th.g.com/th/id/OIP.NRWj0CqYkx5f-RbJa2GyqwEsDI?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width = "200" alt = "Error there is no image." /> 
+        
+        <h4> Image Links </h4>
+
+        <h5> * clickable image * </h5>
+
+     <a 
+    
+        href = "clickableimg.html"> 
+        <img src = "https://th.bing.com/th/id/OIP.NRWj0CqYkx5f-RbJa2GyqwEsDI?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width = "200" alt = "Error" /> 
+
+     </a>
+
+     <h5> * clickable image TO OTHER WEBSITE but STAYS * </h5>
+
+     <a  
+    
+        href = "https://www.youtube.com/watch?v=KC_TB9dsZ5g&list=PLVnJhHoKgEmqJul8qc11jibcZXiPTgbR5&index=4"> 
+        <img src = "https://th.bing.com/th/id/OIP.NRWj0CqYkx5f-RbJa2GyqwEsDI?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width = "200" alt = "Error" /> 
+
+     </a>
+
+     <h5> * clickable image TO OTHER WEBSITE but DO NOT STAY * </h5>
+
+     <a 
+    
+        href = "https://www.youtube.com/watch?v=KC_TB9dsZ5g&list=PLVnJhHoKgEmqJul8qc11jibcZXiPTgbR5&index=4" target = "_blank" >
+        <img src = "https://th.bing.com/th/id/OIP.NRWj0CqYkx5f-RbJa2GyqwEsDI?w=242&h=180&c=7&r=0&o=7&pid=1.7&rm=3" width = "200" alt = "Error"  /> 
+
+     </a>
+
+    <br> <br>
+
+        <h1> • AUDIO AND VIDEO </h1>
+
+        <h4> Audio Tags </h4> 
+
+        <h5> * normal audio * </h5>
+        
+        <audio controls>
+
+            <source src = "hellohellohello.mp3"/>
+
+        </audio>
+
+        <h5> * muted audio (can be unmute)* </h5>
+
+        <audio controls muted>
+
+            <source src = "hellohellohello.mp3"/>
+
+        </audio>
+
+        <h5> * loop audio * </h5>
+
+        <audio controls loop>
+
+            <source src = "hellohellohello.mp3"/>
+
+        </audio>
+
+        <h5> * autoplay audio * </h5> 
+
+        <audio controls autoplay muted> <!-- autoplay will work if there's muted -->
+
+            <source src = "hellohellohello.mp3"/>
+
+        </audio>
+
+        <h5> * muted and loop audio * </h5>
+
+        <audio controls muted loop>
+
+            <source src = "hellohellohello.mp3"/>
+
+        </audio>
+
+        <h4> Another way for Audio Tag </h4> 
+
+        <audio src = "hellohellohello.mp3" controls> </audio>
+
+        <h4> Video Tags </h4> <!-- autoplay will work if there's muted -->
+
+        <h5> * video WITHOUT width and height* </h5>
+
+        <video controls> 
+
+            <source src = "codevid.mp4" type = "video/mp4" />
+
+        </video>
+
+        <h5> * video WITH width and height * </h5>
+
+        <video controls width = "210" height = "350"> 
+
+            <source src = "codevid.mp4" />
+
+        </video>
+
+        <!-- just same with Audio, muted, loop, and autoplay can be also use -->
+
+        <h4> Another way for Video Tag </h4> <!-- autoplay will work if there's muted -->
+
+        <video controls width = "210" height = "350" src = "codevid.mp4" > </video>
+
+<br> <br>
+
+        <h1> • LIST </h1>
+
+        <h5> * using Unordered List (ul) * </h5>
+
+        <ul> 
+
+            <li> C </li>
+            <li> C++ </li>
+            <li> C# </li>
+
+        </ul>
+
+        <h4> UNORDERED LIST EXAMPLE </h4>
+
+        <ul> 
+
+            <li> FRUITS </li>
+
+            <ul> 
+
+                <li> Orange </li>
+                <li> Apple </li>
+
+            </ul>
+
+            <li> VEGETABLE </li>
+
+            <ul> 
+
+                <li> Cabbage </li>
+                <li> Celery </li>
+
+            </ul>
+
+
+        </ul>
+
+        <h5> * using Ordered List (ol) * </h5>
+
+        <ol> 
+
+            <li> C </li>
+            <li> C++ </li>
+            <li> C# </li>
+
+        </ol>
+
+        <h4> ORDERED LIST EXAMPLE </h4>
+
+        <ol> 
+
+            <li> C </li>
+            <li> C++ </li>
+            <li> C# </li>
+
+        </ol>
+
+        <h4> ORDERED LIST EXAMPLE with VALUE </h4>
+
+        <ol> 
+
+            <h5> * value 10 * </h5>
+
+            <li value = "10"> C </li>
+            <li> C++ </li>
+            <li> C# </li>
+
+            <h5> * value 20 * </h5>
+
+            <li value = "20"> Ci </li>
+            <li> Ci++ </li>
+            <li> Ci# </li>
+
+        </ol>
+
+        <h4> SIMPLE LIST EXAMPLE (ul and ol) </h4>
+
+        <ol>
+
+            <li> Names </li>
+
+            <ul>
+
+                <li> Jessa </li>
+                <li> Mae </li>
+                <li> Jessa Mae </li>
+
+            </ul>
+
+            <li> Middlename </li>
+
+            <ul> 
+                
+                <li> Cullano </li> 
+
+            </ul>
+
+            <li> Surname </li>
+
+            <ul>
+
+                <li> Fabellorin </li>
+
+            </ul>
+
+
+        </ol>
+
+<br>
+
+        <h1> TABLES </h1>
+
+        <!-- MUST HAVE (style tag) INSIDE OF (header tag) TO HAVE BORDERS -->
+
+        <h5> * simple table * </h5>
+
+        <table>
+
+            <tr>
+
+                <th> Title 1 </th>
+                <th> Title 2 </th>
+                <th> Title 3 </th>
+
+            </tr>
+
+            <tr>
+
+                <td> Content 1 </td>
+                <td> Content 2 </td>
+                <td> Content 3 </td>
+
+            </tr>
+
+            <tr>
+
+                <td> Content 4 </td>
+                <td> Content 5 </td>
+                <td> Content 6 </td>
+
+            </tr>
+
+        </table>
+
+        <h5> * merging table with caption/title * </h5>
+
+    <table class = "colored-table">
+
+            <caption> GRADES </caption>
+
+        <thead>
+            <tr>
+
+                <th rowspan = "2"> Names </th>
+                <th colspan = "2" > Subjects </th>
+
+            </tr>
+
+            <tr>
+                
+                <td> C++ </td>
+                <td> Java </td>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td> Jessa </td>
+                <td> 94 </td>
+                <td> 92 </td>
+
+            </tr>
+
+            <tr>
+
+                <td> Mae </td>
+                <td> 95 </td>
+                <td> 90 </td>
+
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>  
+
+                <td colspan = "3" > footer </td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+
+    </body>
+
+</html>

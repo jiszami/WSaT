@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> FABLE </title>
+
+<style>
+
+body {
+    background: linear-gradient(180deg, #10184D, #842D7E);
+}
+
+h2 {
+
+    font-family: "Press Start 2P";
+    padding: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: normal;
+    color: #EC90BA;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.navbar {
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 100px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #EC90BA;
+            color: #10184D;
+        }
+
+.logo {
+            position: absolute;
+            height: 50;
+            border-radius: 50%;
+        }
+
+
+
+
+nav[navigation="contact"] {
+
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 20px;
+    padding: 40px;
+    background-image: linear-gradient(135deg, #EC90BA, #10184D);
+    border: 2px solid #0D062D;
+    border-radius: 25px;
+    text-align: center;   
+    
+}
+
+h3 {
+
+    font-family: "Science Gothic";
+    font-size: 35px;
+    color:#10184D;
+    margin: 0px;
+    
+}
+
+nav[navigation="contact"] input,
+nav[navigation="contact"] button {
+    font-family: "Pixelify Sans";
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 2px solid #10184D;
+    box-sizing: border-box;
+}
+
+nav[navigation="contact"] textarea {
+    font-family: "Science Gothic";
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 12px;
+    border-radius: 7px;
+    border: 3px solid #10184D;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+nav[navigation="contact"] button {
+    background-color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    color: #10184D;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+nav[navigation="contact"] button:hover {
+    background-color: #EC90BA;
+}
+
+.suggestions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.suggestions div {
+    width: 48%;               
+    padding: 5px 12px;
+    background: white;
+    color: #842D7E;
+    border-radius: 13px;
+    font-family: Pixelify Sans;
+    cursor: pointer;
+    border: 2px solid #10184D;
+    font-size: 15px;
+    text-align: center;       
+    box-sizing: border-box;  
+
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
+    box-sizing: border-box;
+}
+
+.suggestions div:hover {
+    background: #EC90BA;
+    
+}
+
+</style>
+
+<link rel="icon" type="Image/x-icon" href="fable.png" style="height: 100%;">
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<a><img src="templogo.png" class="logo"></a>
+
+<div class="navbar">
+        <a href="#">Documentation</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">HomePage</a>
+</div>
+
+<h2>Do you have any questions? Send us a message here.</h2>
+
+<nav navigation="contact">
+
+<h3> Contact Us </h3>
+
+<form action="mailto:202580087@psu.palawan.edu.ph?subject=FABLE Contact Form" method="post" enctype="text/plain">
+
+<input type="text" name="name" placeholder="Enter Name" required>
+<input type="email" name="email" placeholder="Enter Email" required>
+
+<textarea id="msg" name="msg" placeholder="Enter Your Message Here..." rows="7" required></textarea>
+
+<button type="submit"> Click to Send Your Message</button>
+
+</form>
+
+<div class="suggestions">
+    <div onclick="addText('How can I download it?')">How can I download it?</div>
+    <div onclick="addText('How to master this game?')">How to master <br> this game?</div>
+    <div onclick="addText('When is the release date?')">When is the <br> release date?</div>
+    <div onclick="addText('Any other social media accounts?')">Any other social media accounts?</div>
+</div>
+
+</nav>
+
+<script>
+function addText(text) {
+    document.getElementById("msg").value = text;
+}
+</script>
+
+</body>
+
+</html>
