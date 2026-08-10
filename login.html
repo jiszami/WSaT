@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Top 3 Best Dishes in the Philippines</title>
+<style>
+
+.body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.top {
+    margin-left: 120px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+}
+.logo-img {
+  width: 50px;  
+  height: 50px; 
+  object-fit: contain;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 100px;
+    text-decoration: none;
+    margin-left: 50px; 
+}
+.nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.center-wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.register-text {
+    font-size: 18px;      
+    font-weight: normal;   
+    color: #333333;       
+    margin-bottom: 15px;   
+    text-align: center;
+}
+
+
+.box {
+    width: 500px;
+    height: auto;               
+    background-color: #ffffff;  
+    border: 2px solid #000000;  
+    border-radius: 8px;         
+    padding: 30px;
+    box-sizing: border-box;
+}
+.box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.box-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+</style>
+</head>
+<body class="body">
+
+<header class="top">
+    
+    <div class="logo">
+    <img class="logo-img" src="" alt="Waiting Logo">
+    <h1>WELCOME TO OUR PAGE!</h1>
+  </div>
+
+    <div class="nav">
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Log In</a>
+    </div>
+</header>
+
+
+<div class="center-wrapper">
+    
+    <h3 class="register-text">Hello, welcome back!</h3>
+
+    <div class="box">
+        <label>Name:</label>
+        <input type="text">
+        
+        <label>E-mail:</label>
+        <input type="text">
+        
+        <label>Password:</label>
+        <input type="password">
+        
+        <button class="box-btn">LOG IN</button>
+    </div>
+
+</div>
+
+</body>
+</html>
