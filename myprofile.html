@@ -1,17 +1,94 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+    
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-top: 5vh; 
+            box-sizing: border-box;
+        }
 
-<title>My Profile</title>
+        h1 {
+            color: #0d233a;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-align: center;
+        }
 
+        .content {
+            background-color: #ffffff;
+            padding: 45px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(13, 35, 58, 0.15);
+            width: 650px;
+            min-height: 250px;
+            text-align: left;
+            border-top: 6px solid #0d233a;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0d233a;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .nav a:hover {
+            background-color: #1d3e61; 
+        }
+
+        p {
+            color: #334e68;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 14px 0;
+        }
+
+        strong {
+            color: #0d233a;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>This is My Profile</h1>
+    <h1>Welcome to my profile!</h1>
+
+    <div class="content">
+       
+        <nav class="nav">
+            <a href="myprofile.html">My Profile</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="dislikes.html">Dislikes</a>
+        </nav>
+
+        <p><strong>Name:</strong> Jessa Mae C. Fabelorin</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Birthday:</strong> November 28, 2006</p>
+        <p><strong>Address:</strong> Brgy. San Jose</p>
+        <p><strong>Contact Number:</strong> 09157165435</p>
+        <p><strong>Email:</strong> 202580087@psu.palawan.edu</p>
+    </div>
 
 </body>
-
 </html>
