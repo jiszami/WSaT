@@ -10,64 +10,41 @@
 
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
 }
 
 .body {
-  background-color: white;
+  background-color: #ffffff; 
+  color: #333333; 
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-.top {
+/* Header Container */
+.head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 12px 50px; 
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #001739; 
+  border-top: 2px solid yellow;
+  position: relative; 
+  flex-shrink: 0; 
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 20px; 
-}
-
-.logo-img {
-  height: 50px;        
+  height: 45px;       
   width: auto;        
   object-fit: contain;
 }
 
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 12px 24px;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.nav a:hover {
-  background-color: black;
-  color: white;
-}
-
-
-
-.center-wrapper {
+.box {
     position: absolute;
-    top: 55%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -75,8 +52,7 @@ html, body {
     align-items: center; 
 }
 
-
-.register-text {
+.box h3{
     font-size: 18px;      
     font-weight: normal;   
     color: #333333;       
@@ -84,16 +60,15 @@ html, body {
     text-align: center;
 }
 
-
-.box {
-    width: 500px;
-    height: auto;               
+.boxContent {
+    width: 500px;           
     background-color: #ffffff;  
     border: 2px solid #000000;  
     border-radius: 8px;         
     padding: 30px;
     box-sizing: border-box;
 }
+
 .box label {
     display: block;
     margin-top: 15px;
@@ -107,36 +82,47 @@ html, body {
     border-radius: 4px;
     box-sizing: border-box;
 }
-.box-btn {
+
+main {
+ text-decoration: none; 
+ width: 100%; 
+ display: block;
+}
+
+.boxBtn {
     width: 100%;
     padding: 10px;
     background-color: black;
     color: white;
-    border: none;
-    border-radius: 4px;
     margin-top: 25px;
     font-weight: bold;
     cursor: pointer;
-    text-transform: uppercase;
+}
+
+.boxBtn:hover {
+  background-color: #1e3686;
+  border-color: #1e3686;
+  color: #ffffff;
 }
 
 .footer {
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  border-top: 1px solid #eeeeee;
+  border-top: 2px solid #001739; 
+  border-bottom: 2px solid yellow;
   margin-top: auto; 
 }
 
 .footer a {
   color: #555555;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 .footer a:hover {
-  color: black;
+  color: #3758c7;
   text-decoration: underline;
 }
 
@@ -148,34 +134,28 @@ html, body {
 
 <header class="top">
     
-    <div class="logo"> 
+    <div class="head"> 
       
-      <img src="sauteia.png" class="logo-img" alt="Sauteia Logo">
+      <img src="sauteia.png" class="logo">
     
-  </div>
-
-    <div class="nav">
-      <a href="signup.html">Sign Up</a>
-      <a href="login.html">Log In</a>
-    </div>
 </header>
 
-
-<div class="center-wrapper">
+<div class="box">
     
-    <h3 class="register-text">Hello, please create an account...</h3>
+    <h3>Hello, please create an account...</h3>
 
-    <div class="box">
+    <div class="boxContent">
         <label>Name:</label>
         <input type="text">
         
-        <label>Register E-mail:</label>
+        <label>Register Email:</label>
         <input type="text">
         
         <label>Create a Password:</label>
         <input type="password">
         
-        <button class="box-btn">SIGN UP</button>
+        <a href="mainpage.html" class="main">
+    <button class="boxBtn">SIGN UP</button></a>
     </div>
 
 </div>

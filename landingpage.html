@@ -1,157 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Top 3 Best Dishes in the Philippines</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sautéia</title>
 <style>
 
+/* fitting the page */
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
 }
 
 .body {
-  background-color: white;
+  background-color: #ffffff; 
+  color: #333333; 
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-.top {
+/* Header Container */
+.head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 12px 50px; 
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 2px solid #001739; 
+  border-top: 2px solid yellow;
+  position: relative; 
+  flex-shrink: 0; 
+}
+
+.textHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 20px; 
-}
-
-.logo-img {
-  height: 50px;        
+  height: 45px;       
   width: auto;        
   object-fit: contain;
 }
 
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  display: block;
+.textHeader h1 {
   color: black;
-  text-align: center;
-  padding: 12px 24px;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-weight: bold;
+  margin: 0;
+  font-size: 28px;
 }
-
-.nav a:hover {
-  background-color: black;
-  color: white;
-}
-
-.box-container {
-  flex: 1;
+/* Center Box */
+.box {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 150px;
+  background-color: #fcfcfc;
 }
 
-.box {
+.boxContent {
   width: 500px;
   height: 300px;
-  background-color: #ffffff;
-  border: 2px solid #000000;
+  background-color: #ffffff; 
+  border: 2px solid black;    
   border-radius: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45px; 
   box-sizing: border-box;
 }
 
-.box-text {
+.boxText {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
   color: #333333;
   margin: 0;
+  margin-top: 5px; 
+}
+
+.shadow {
+  font-weight: bold;
+  color: #333333; 
+  text-shadow: 0 4px 20px rgba(30, 54, 134, 0.6);
+}
+
+.boxNav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 5px; 
+}
+
+.navBtn {
+  flex: 1;
+  max-width: 140px;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #001739;
+  border: 2px solid #001739;
+  border-radius: 6px;
+}
+
+.navBtn:hover {
+  background-color: #1e3686;
+  border-color: #1e3686;
+  color: #ffffff;
 }
 
 .footer {
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  border-top: 1px solid #eeeeee;
+  border-top: 2px solid #001739; 
+  border-bottom: 2px solid yellow;
   margin-top: auto; 
 }
 
 .footer a {
   color: #555555;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 .footer a:hover {
-  color: black;
+  color: #3758c7;
   text-decoration: underline;
 }
 
 </style>
-
 </head>
-
 <body class="body">
 
-<header class="top">
-
-  <div class="logo">
-
-      <img src="sauteia.png" class="logo-img" alt="Sauteia Logo">
-      <h1>WELCOME TO OUR PAGE!</h1>
-
+<header class="head">
+  <div class="textHeader">
+      <img src="sauteia.png" class="logo">
+      <h1>WELCOME TO SAUTÉIA!</h1>
   </div>
-
-  <div class="nav">
-
-      <a href="signup.html">Sign Up</a>
-      <a href="login.html">Log In</a>
-
-  </div>
-
 </header>
 
-<div class="box-container">
-
-  <div class="box">
-
-    <p class="box-text">
-
-        Please choose on the top right corner: <br><br>
-        <strong>"Log In"</strong> if you have an existing account. <br>
-        <strong>"Sign Up"</strong> if you are new here.
+<div class="box">
+  <div class="boxContent">
+    <p class="boxText">
+        Please choose: <br><br>
+        <span class="shadow">"Log In"</span> if you have an existing account. <br>
+        <span class="shadow">"Sign Up"</span> if you are new in sautéia.
     </p>
-
+    
+    <div class="boxNav">
+        <a href="login.html" class="navBtn">Log In</a>
+        <a href="signup.html" class="navBtn">Sign Up</a>
+    </div>
   </div>
-  
 </div>
 
 <footer class="footer">
-
   <a href="about.html">About Us</a>
-
 </footer>
 
 </body>
-
 </html>

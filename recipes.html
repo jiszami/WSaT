@@ -1,54 +1,114 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
 
-<title> Top 3 Best Dishes in the Philippines</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Sautéia</title>
 <style>
 
-.title{
-
-text-align: center;
-
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
 }
 
-.menu 
-            {
-                display: flex;                 
-                justify-content: center;       
-                gap: 30px;                     
-                margin-top: 80px;              
-            }
-        
-        .menu h4 
-        {
+.body {
+  background-color: #ffffff; 
+  color: #333333; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-            margin: 0; 
-                                
-        }
+.head {
+  display: flex;
+  align-items: center;
+  padding: 12px 50px; 
+  background-color: #ffffff;
+  border-bottom: 2px solid #001739; 
+  border-top: 2px solid yellow;
+  position: relative; 
+  flex-shrink: 0; 
+}
+
+.logo {
+  height: 45px;       
+  width: auto;        
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;                 
+  gap: 40px;                     
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 2;
+}
+
+.nav h4, p{
+  margin: 0; 
+  font-size: 18px;
+}
+
+.nav a {
+  color: #001739; 
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  background-color: #1e3686; 
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 2px solid #001739;
+  margin-top: auto; 
+}
+
+.footer a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #3758c7;
+  text-decoration: underline;
+}
 
 </style>
-
-
 </head>
+<body class="body">
 
-<body>
+<header class="head">
+  <div> 
+    <img src="sauteia.png" class="logo">
+  </div>
 
-<h1 class = "title"> TOP 3 BEST DISHES </h1>
+  <nav class="nav">
+  <a href="mainpage.html" target="_self">Home</a>
+  <a href="recipes.html" target="_self">Recipes</a>
+  <a href="tips.html" target="_self">Tips</a>
+  <a href="contact.html" target="_self">Contact</a>
+</nav>
+</header>
 
-<div class = "menu" >
-
-        <h4> <p> <a href = "mainpage.html" target = "_self"> Home </a> </p> </h4> 
-        <h4> <p> <a href = "about.html" target = "_self"> About </a> </p></h4>
-        <h4> <p> <a href = "recipes.html" target = "_self"> Recipes </a> </p></h4>
-        <h4> <p> <a href = "tips.html" target = "_self"> Tips </a> </a> </p> </h4>
-        <h4> <p> <a href = "contact.html" target = "_self"> Contact </a></p> </h4>
-
-    </div>
-
+<footer class="footer">
+  <a href="about.html">About Us</a>
+</footer>
 
 </body>
-
 </html>
