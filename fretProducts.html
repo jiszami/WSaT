@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Fretastic Products</title>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #555555);
+}
+
+.head {
+    padding: 10px 20px;                  
+    background-color: #222222; 
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo {
+    height: 50px;      
+    width: auto;       
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 0;
+}
+
+.boxContent {
+    background-color: #333333;
+    border: 2px solid #222222;    
+    padding: 45px; 
+    border-radius: 12px;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.boxText {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.boxNav {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 180px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222222;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <div> 
+    <img src="images/fretastic.png" class="logo">
+  </div>
+
+  <nav class="nav">
+    <a href="fretHome.html" target="_self"><strong>Home</strong></a>
+    <a href="fretProducts.html" target="_self"><strong>Products</strong></a>
+    <a href="fretServices.html" target="_self"><strong>Services</strong></a>
+    <a href="fretContact.html" target="_self"><strong>Contact</strong></a>
+  </nav>
+</header>
+
+<div class="box">
+  <div class="boxContent">
+    
+    <div class="links">
+      <a href="">PRS</a>
+      <a href="">Yamaha</a>
+      <a href="">Fender</a>
+      <a href="">Ligaya</a>
+    </div>
+
+    <p class="boxText">Current: <strong>Yamaha</strong></p>
+    
+    <div class="boxNav">
+      <div class="product">
+        <img src="images/yamaha1.jpg">
+      </div>
+      
+      <div class="product">
+        <img src="images/yamaha2.jpg">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="fretAbout.html">About Us</a>
+</footer>
+
+</body>
+</html>

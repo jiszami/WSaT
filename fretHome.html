@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Fretastic Home Page</title>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at bottom, #555555 0%, #000000 80%);
+}
+
+.head {
+    padding: 10px 20px;                  
+    background-color: #222222; 
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo {
+    height: 50px;      
+    width: auto;       
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 0;
+}
+
+.boxContent {
+    background: radial-gradient(circle at bottom, #444444 0%, #111111 80%);
+    border: 2px solid #222222;    
+    flex-direction: column;
+    padding: 45px; 
+    display: flex;
+    border-radius: 12px;
+}
+
+.boxContent h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.product p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222222;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <div> 
+    <img src="images/fretastic.png" class="logo">
+  </div>
+
+  <nav class="nav">
+    <a href="fretHome.html" target="_self"><strong>Home</strong></a>
+    <a href="fretProducts.html" target="_self"><strong>Products</strong></a>
+    <a href="fretServices.html" target="_self"><strong>Services</strong></a>
+    <a href="fretContact.html" target="_self"><strong>Contact</strong></a>
+  </nav>
+</header>
+
+<div class="box">
+  <div class="boxContent">
+    <h2>These are our top-selling products for the month of July!</h2>
+
+    <div class="images">
+      <div class="product">
+       <img src="images/floyd.png" class="img">
+       <p>PRS Custom 24 "Floyd"</p>
+     </div>  
+
+     <div class="product">
+      <img src="images/yamahaAcou.jpg" class="img">
+       <p>Yamaha FGX800C</p>
+     </div> 
+
+     <div class="product">
+       <img src="images/squier.jpg" class="img">
+       <p>Fender Squier Sonic Precision Bass</p>
+     </div> 
+
+     <div class="product">
+       <img src="images/ligaya.jpg" class="img">
+       <p>Ligaya Standard Series Classic S</p>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="fretAbout.html">About Us</a>
+</footer>
+
+</body>
+</html>
