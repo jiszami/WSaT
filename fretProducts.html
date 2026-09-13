@@ -61,22 +61,41 @@ body {
     border-radius: 12px;
 }
 
-.links {
+.menu-section {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
     margin-bottom: 30px;
     border-bottom: 2px solid #222222;
     padding-bottom: 15px;
 }
 
-.links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+.links {
+    display: flex;
+    gap: 25px;
 }
 
-.links a:hover {
+.links label {
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.links label:hover {
     text-decoration: underline;
+}
+
+.arrow {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow:hover {
+    opacity: 0.7;
 }
 
 .boxText {
@@ -84,6 +103,28 @@ body {
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 25px;
+}
+
+.brand-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand-link:hover {
+    text-decoration: underline;
+}
+
+.hover-text {
+    display: none;
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.brand-link:hover .hover-text {
+    display: inline;
 }
 
 .boxNav {
@@ -119,6 +160,33 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+.menu-section, .brand-panel {
+    display: none;
+}
+
+#group-1:checked ~ .menu-group-1 {
+    display: flex;
+}
+
+#group-2:checked ~ .menu-group-2 {
+    display: flex;
+}
+
+#tab-prs:checked ~ .brand-prs,
+#tab-yamaha:checked ~ .brand-yamaha,
+#tab-fender:checked ~ .brand-fender,
+#tab-ligaya:checked ~ .brand-ligaya,
+#tab-kawes:checked ~ .brand-kawes,
+#tab-gibson:checked ~ .brand-gibson,
+#tab-ibanez:checked ~ .brand-ibanez,
+#tab-epiphone:checked ~ .brand-epiphone {
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -139,22 +207,101 @@ body {
 <div class="box">
   <div class="boxContent">
     
-    <div class="links">
-      <a href="">PRS</a>
-      <a href="">Yamaha</a>
-      <a href="">Fender</a>
-      <a href="">Ligaya</a>
+    <input type="radio" id="group-1" name="menu-toggle" checked>
+    <input type="radio" id="group-2" name="menu-toggle">
+
+    <input type="radio" id="tab-prs" name="brand-group" checked>
+    <input type="radio" id="tab-yamaha" name="brand-group">
+    <input type="radio" id="tab-fender" name="brand-group">
+    <input type="radio" id="tab-ligaya" name="brand-group">
+    <input type="radio" id="tab-kawes" name="brand-group">
+    <input type="radio" id="tab-gibson" name="brand-group">
+    <input type="radio" id="tab-ibanez" name="brand-group">
+    <input type="radio" id="tab-epiphone" name="brand-group">
+
+    <div class="menu-section menu-group-1">
+      <label for="group-2" class="arrow">❮</label>
+      <div class="links">
+        <label for="tab-prs">PRS</label>
+        <label for="tab-yamaha">Yamaha</label>
+        <label for="tab-fender">Fender</label>
+        <label for="tab-ligaya">Ligaya</label>
+      </div>
+      <label for="group-2" class="arrow">❯</label>
     </div>
 
-    <p class="boxText">Current: <strong>Yamaha</strong></p>
-    
-    <div class="boxNav">
-      <div class="product">
-        <img src="images/yamaha1.jpg">
+    <div class="menu-section menu-group-2">
+      <label for="group-1" class="arrow">❮</label>
+      <div class="links">
+        <label for="tab-kawes">KAWES</label>
+        <label for="tab-gibson">Gibson</label>
+        <label for="tab-ibanez">Ibanez</label>
+        <label for="tab-epiphone">Epiphone</label>
       </div>
-      
-      <div class="product">
-        <img src="images/yamaha2.jpg">
+      <label for="group-1" class="arrow">❯</label>
+    </div>
+
+    <div class="brand-panel brand-prs">
+      <p class="boxText">Brand: <a href="prs.html" target="_self" class="brand-link">PRS<span class="hover-text">(See full products for PRS)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-yamaha">
+      <p class="boxText">Brand: <a href="yamaha.html" target="_self" class="brand-link">Yamaha<span class="hover-text">(See full products for Yamaha)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-fender">
+      <p class="boxText">Brand: <a href="fender.html" target="_self" class="brand-link">Fender<span class="hover-text">(See full products for Fender)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-ligaya">
+      <p class="boxText">Brand: <a href="ligaya.html" target="_self" class="brand-link">Ligaya<span class="hover-text">(See full products for Ligaya)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-kawes">
+      <p class="boxText">Brand: <a href="kawes.html" target="_self" class="brand-link">KAWES<span class="hover-text">(See full products for KAWES)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-gibson">
+      <p class="boxText">Brand: <a href="gibson.html" target="_self" class="brand-link">Gibson<span class="hover-text">(See full products for Gibson)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-ibanez">
+      <p class="boxText">Brand: <a href="ibanez.html" target="_self" class="brand-link">Ibanez<span class="hover-text">(See full products for Ibanez)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
+      </div>
+    </div>
+
+    <div class="brand-panel brand-epiphone">
+      <p class="boxText">Brand: <a href="epiphone.html" target="_self" class="brand-link">Epiphone<span class="hover-text">(See full products for Epiphone)</span></a></p>
+      <div class="boxNav">
+        <div class="product"><img src=""></div>
+        <div class="product"><img src=""></div>
       </div>
     </div>
 
