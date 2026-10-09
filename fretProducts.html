@@ -1,316 +1,190 @@
+
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fretastic Products</title>
-<style>
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #000000, #555555);
-}
-
-.head {
-    padding: 10px 20px;                  
-    background-color: #222222; 
-    display: flex;
-    align-items: center;
-    gap: 40px; 
-}
-
-.logo {
-    height: 50px;      
-    width: auto;       
-}
-
-.nav {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 100px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 40px 0;
-}
-
-.boxContent {
-    background-color: #333333;
-    border: 2px solid #222222;    
-    padding: 45px; 
-    border-radius: 12px;
-}
-
-.menu-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #222222;
-    padding-bottom: 15px;
-}
-
-.links {
-    display: flex;
-    gap: 25px;
-}
-
-.links label {
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.links label:hover {
-    text-decoration: underline;
-}
-
-.arrow {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-}
-
-.arrow:hover {
-    opacity: 0.7;
-}
-
-.boxText {
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-.brand-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.brand-link:hover {
-    text-decoration: underline;
-}
-
-.hover-text {
-    display: none;
-    font-size: 14px;
-    color: #aaaaaa;
-    margin-left: 10px;
-    font-weight: normal;
-}
-
-.brand-link:hover .hover-text {
-    display: inline;
-}
-
-.boxNav {
-    display: flex;
-    gap: 20px;
-}
-
-.product {
-    text-align: center;
-}
-
-.product img {
-    width: 180px;
-    height: 150px;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    margin-bottom: 5px;
-}
-
-.footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #222222;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.menu-section, .brand-panel {
-    display: none;
-}
-
-#group-1:checked ~ .menu-group-1 {
-    display: flex;
-}
-
-#group-2:checked ~ .menu-group-2 {
-    display: flex;
-}
-
-#tab-prs:checked ~ .brand-prs,
-#tab-yamaha:checked ~ .brand-yamaha,
-#tab-fender:checked ~ .brand-fender,
-#tab-ligaya:checked ~ .brand-ligaya,
-#tab-kawes:checked ~ .brand-kawes,
-#tab-gibson:checked ~ .brand-gibson,
-#tab-ibanez:checked ~ .brand-ibanez,
-#tab-epiphone:checked ~ .brand-epiphone {
-    display: block;
-}
-</style>
+    <link rel="stylesheet" href="../css/fretProducts.css">
 </head>
 <body>
 
-<header class="head">
-  <div> 
-    <img src="images/fretastic.png" class="logo">
-  </div>
+    <header class="head">
+        <div>
+            <img src="../images/fretastic.png" class="logo" alt="Fretastic Logo">
+        </div>
 
-  <nav class="nav">
-    <a href="fretHome.html" target="_self"><strong>Home</strong></a>
-    <a href="fretProducts.html" target="_self"><strong>Products</strong></a>
-    <a href="fretServices.html" target="_self"><strong>Services</strong></a>
-    <a href="fretContact.html" target="_self"><strong>Contact</strong></a>
-  </nav>
-</header>
+        <nav class="nav">
+            <a href="fretHome.html"><strong>Home</strong></a>
+            <a href="fretProducts.html"><strong>Products</strong></a>
+            <a href="fretServices.html"><strong>Services</strong></a>
+            <a href="fretContact.html"><strong>Contact</strong></a>
+        </nav>
+    </header>
 
-<div class="box">
-  <div class="boxContent">
-    
-    <input type="radio" id="group-1" name="menu-toggle" checked>
-    <input type="radio" id="group-2" name="menu-toggle">
+    <main class="box">
+        <div class="boxContent">
 
-    <input type="radio" id="tab-prs" name="brand-group" checked>
-    <input type="radio" id="tab-yamaha" name="brand-group">
-    <input type="radio" id="tab-fender" name="brand-group">
-    <input type="radio" id="tab-ligaya" name="brand-group">
-    <input type="radio" id="tab-kawes" name="brand-group">
-    <input type="radio" id="tab-gibson" name="brand-group">
-    <input type="radio" id="tab-ibanez" name="brand-group">
-    <input type="radio" id="tab-epiphone" name="brand-group">
+            <!-- Menu group controls -->
+            <input type="radio" id="group-1" name="menu-toggle" checked>
+            <input type="radio" id="group-2" name="menu-toggle">
 
-    <div class="menu-section menu-group-1">
-      <label for="group-2" class="arrow">❮</label>
-      <div class="links">
-        <label for="tab-prs">PRS</label>
-        <label for="tab-yamaha">Yamaha</label>
-        <label for="tab-fender">Fender</label>
-        <label for="tab-ligaya">Ligaya</label>
-      </div>
-      <label for="group-2" class="arrow">❯</label>
-    </div>
+            <!-- Brand controls -->
+            <input type="radio" id="tab-clifton" name="brand-group" checked>
+            <input type="radio" id="tab-ligaya" name="brand-group">
+            <input type="radio" id="tab-rjguitars" name="brand-group">
+            <input type="radio" id="tab-fermata" name="brand-group">
+            <input type="radio" id="tab-fernando" name="brand-group">
+            <input type="radio" id="tab-alegre" name="brand-group">
+            <input type="radio" id="tab-jcraft" name="brand-group">
+            <input type="radio" id="tab-dd" name="brand-group">
 
-    <div class="menu-section menu-group-2">
-      <label for="group-1" class="arrow">❮</label>
-      <div class="links">
-        <label for="tab-kawes">KAWES</label>
-        <label for="tab-gibson">Gibson</label>
-        <label for="tab-ibanez">Ibanez</label>
-        <label for="tab-epiphone">Epiphone</label>
-      </div>
-      <label for="group-1" class="arrow">❯</label>
-    </div>
+            <!-- First menu group -->
+            <div class="menu-section menu-group-1">
+                <label for="group-2" class="arrow">❮</label>
 
-    <div class="brand-panel brand-prs">
-      <p class="boxText">Brand: <a href="prs.html" target="_self" class="brand-link">PRS<span class="hover-text">(See full products for PRS)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+                <div class="links">
+                    <label for="tab-clifton">Clifton</label>
+                    <label for="tab-ligaya">Ligaya</label>
+                    <label for="tab-rjguitars">RJ Guitars</label>
+                    <label for="tab-fermata">Fermata</label>
+                </div>
 
-    <div class="brand-panel brand-yamaha">
-      <p class="boxText">Brand: <a href="yamaha.html" target="_self" class="brand-link">Yamaha<span class="hover-text">(See full products for Yamaha)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+                <label for="group-2" class="arrow">❯</label>
+            </div>
 
-    <div class="brand-panel brand-fender">
-      <p class="boxText">Brand: <a href="fender.html" target="_self" class="brand-link">Fender<span class="hover-text">(See full products for Fender)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+            <!-- Second menu group -->
+            <div class="menu-section menu-group-2">
+                <label for="group-1" class="arrow">❮</label>
 
-    <div class="brand-panel brand-ligaya">
-      <p class="boxText">Brand: <a href="ligaya.html" target="_self" class="brand-link">Ligaya<span class="hover-text">(See full products for Ligaya)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+                <div class="links">
+                    <label for="tab-fernando">Fernando</label>
+                    <label for="tab-alegre">Alegre</label>
+                    <label for="tab-jcraft">JCraft</label>
+                    <label for="tab-dd">D&amp;D</label>
+                </div>
 
-    <div class="brand-panel brand-kawes">
-      <p class="boxText">Brand: <a href="kawes.html" target="_self" class="brand-link">KAWES<span class="hover-text">(See full products for KAWES)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+                <label for="group-1" class="arrow">❯</label>
+            </div>
 
-    <div class="brand-panel brand-gibson">
-      <p class="boxText">Brand: <a href="gibson.html" target="_self" class="brand-link">Gibson<span class="hover-text">(See full products for Gibson)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+            <!-- Clifton -->
+            <div class="brand-panel brand-clifton">
+                <p class="boxText">
+                    Brand:
+                    <a href="clifton.html" class="brand-link">
+                        Clifton<span class="hover-text">(See full products for Clifton)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="Clifton"></div>
+                    <div class="product"><img src="" alt="Clifton"></div>
+                </div>
+            </div>
 
-    <div class="brand-panel brand-ibanez">
-      <p class="boxText">Brand: <a href="ibanez.html" target="_self" class="brand-link">Ibanez<span class="hover-text">(See full products for Ibanez)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+            <!-- Ligaya -->
+            <div class="brand-panel brand-ligaya">
+                <p class="boxText">
+                    Brand:
+                    <a href="ligaya.html" class="brand-link">
+                        Ligaya<span class="hover-text">(See full products for Ligaya)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="Ligaya"></div>
+                    <div class="product"><img src="" alt="Ligaya"></div>
+                </div>
+            </div>
 
-    <div class="brand-panel brand-epiphone">
-      <p class="boxText">Brand: <a href="epiphone.html" target="_self" class="brand-link">Epiphone<span class="hover-text">(See full products for Epiphone)</span></a></p>
-      <div class="boxNav">
-        <div class="product"><img src=""></div>
-        <div class="product"><img src=""></div>
-      </div>
-    </div>
+            <!-- RJ Guitars -->
+            <div class="brand-panel brand-rjguitars">
+                <p class="boxText">
+                    Brand:
+                    <a href="rjguitars.html" class="brand-link">
+                        RJ Guitars<span class="hover-text">(See full products for RJ Guitars)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
+                </div>
+            </div>
 
-  </div>
-</div>
+            <!-- Fermata -->
+            <div class="brand-panel brand-fermata">
+                <p class="boxText">
+                    Brand:
+                    <a href="fermata.html" class="brand-link">
+                        Fermata<span class="hover-text">(See full products for Fermata)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="Fermata"></div>
+                    <div class="product"><img src="" alt="Fermata"></div>
+                </div>
+            </div>
 
-<footer class="footer">
-  <a href="fretAbout.html">About Us</a>
-</footer>
+            <!-- Fernando -->
+            <div class="brand-panel brand-fernando">
+                <p class="boxText">
+                    Brand:
+                    <a href="fernando.html" class="brand-link">
+                        Fernando<span class="hover-text">(See full products for Fernando)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="Fernando"></div>
+                    <div class="product"><img src="" alt="Fernando"></div>
+                </div>
+            </div>
+
+            <!-- Alegre -->
+            <div class="brand-panel brand-alegre">
+                <p class="boxText">
+                    Brand:
+                    <a href="alegre.html" class="brand-link">
+                        Alegre<span class="hover-text">(See full products for Alegre)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="Alegre"></div>
+                    <div class="product"><img src="" alt="Alegre"></div>
+                </div>
+            </div>
+
+            <!-- J.Craft -->
+            <div class="brand-panel brand-jcraft">
+                <p class="boxText">
+                    Brand:
+                    <a href="jcraft.html" class="brand-link">
+                        JCraft<span class="hover-text">(See full products for JCraft)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="JCraft"></div>
+                    <div class="product"><img src="" alt="JCraft"></div>
+                </div>
+            </div>
+
+            <!-- D&D -->
+            <div class="brand-panel brand-dd">
+                <p class="boxText">
+                    Brand:
+                    <a href="d&d.html" class="brand-link">
+                        D&amp;D<span class="hover-text">(See full products for D&amp;D)</span>
+                    </a>
+                </p>
+                <div class="boxNav">
+                    <div class="product"><img src="" alt="D&amp;D"></div>
+                    <div class="product"><img src="" alt="D&amp;D"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="fretAbout.html">About Us</a>
+    </footer>
 
 </body>
 </html>

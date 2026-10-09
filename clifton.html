@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clifton Guitars and Accessories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .hero {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.hero a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-img-box {
+            width: 180px;
+            height: 150px;
+            box-sizing: border-box;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .product-card h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #000000;
+        }
+
+        .product-card button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .product-card button:hover {
+            background-color: #333333;
+        }
+
+        #accessories {
+            background-color: #f0f0f0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222222;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Premium Tone, Accessible Pricing</h1>
+        <p>Designed for Filipino musicians. Ready for practice and the main stage.</p>
+        <a href="#acoustic">Acoustic</a>
+        <a href="#electric">Electric</a>
+        <a href="#bass">Bass</a>
+        <a href="#accessories">Accessories</a>
+    </section>
+
+    <section id="acoustic">
+        <h2>Clifton Acoustic Guitars</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar1.jpg" alt="Clifton Acoustic">
+                </div>
+                <h3>Clifton K Series GS Mini Dreadnought</h3>
+                <p class="price">₱6,350.00</p>
+                <button>View Bundle</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar2.jpg" alt="Clifton Acoustic">
+                </div>
+                <h3>Harmony 41in Budget Guitar w/ PICKUP</h3>
+                <p class="price">₱4,650.00</p>
+                <button>View Bundle</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar3.jpg" alt="Clifton Acoustic">
+                </div>
+                <h3>Bitstring Starter 38in with Freebies</h3>
+                <p class="price">₱1,600.00</p>
+                <button>View Bundle</button>
+            </div>
+
+        </div>
+    </section>
+
+ <section id="electric">
+        <h2>Clifton Electric Guitars</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar1.jpg" alt="Clifton Electric">
+                </div>
+                <h3>Clifton Pioneer Stratocaster Package</h3>
+                <p class="price">₱4,390.00</p>
+                <button>View Bundle</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar2.jpg" alt="Clifton Electric">
+                </div>
+                <h3>Stratocaster Pioneer Series - FREE Accessories</h3>
+                <p class="price">₱4,890.00</p>
+                <button>View Bundle</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="bass">
+        <h2>Clifton Bass Guitars</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar1.jpg" alt="Clifton Bass">
+                </div>
+                <h3>Clifton 4 String Precision (P-bass)</h3>
+                <p class="price">₱6,330.00</p>
+                <button>View Bundle</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar2.jpg" alt="Clifton Bass">
+                </div>
+                <h3>Clifton 4-String Vintage Custom Jazz</h3>
+                <p class="price">₱6,890.00</p>
+                <button>View Bundle</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="guitar3.jpg" alt="Clifton Bass">
+                </div>
+                <h3>Clifton 32 Inch Mini Bass Precision</h3>
+                <p class="price">₱6,500.00</p>
+                <button>View Bundle</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="accessories">
+        <h2>Clifton Guitar Accessories</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="accessory1.jpg" alt="Strings">
+                </div>
+                <h3>Nickel Plated Electric Guitar Strings</h3>
+                <p class="price">₱350.00</p>
+                <button>Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="accessory2.jpg" alt="Strings">
+                </div>
+                <h3>Clifton Electric Bass Strings</h3>
+                <p class="price">₱560.00</p>
+                <button>Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="accessory3.jpg" alt="Strings">
+                </div>
+                <h3>Clifton Phosphor Bronze Coated Acoustic Strings</h3>
+                <p class="price">₱360.00</p>
+                <button>Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="accessory3.jpg" alt="Gig Bag">
+                </div>
+                <h3>Clifton CBG-41 Padded Guitar Bag Gigbag (Black)</h3>
+                <p class="price">₱1,200.00</p>
+                <button>Add to Bag</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="accessory3.jpg" alt="Gig Bag">
+                </div>
+                <h3>Clifton CGBE-40 Electric Guitar Bag Gigbag</h3>
+                <p class="price">₱1,200.00</p>
+                <button>Add to Bag</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="fretAbout.html">About Us</a>
+    </footer>
+
+</body>
+</html>
