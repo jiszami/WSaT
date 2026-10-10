@@ -3,281 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RJ Guitars Guitars and Accessories</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        .head {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .head h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .head p {
-            font-size: 1.1rem;
-            color: #cccccc;
-            margin-bottom: 30px;
-        }
-
-        .head a {
-            display: inline-block;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-            text-transform: uppercase;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .head a:hover {
-            background-color: #333333;
-            color: #ffffff;
-        }
-
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        section h2 {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            border-bottom: 2px solid #000000;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        .productlist {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .products {
-            background-color: #ffffff;
-            border: 1px solid #e5e5e5;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .products h3 {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-
-        .products .price {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin: 10px 0;
-            color: #000000;
-        }
-
-        .products button {
-            background-color: #000000;
-            color: #ffffff;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
-        .products button:hover {
-            background-color: #333333;
-        }
-
-        #accessories {
-            background-color: #f0f0f0;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #222222;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>RJ Guitars | Fretastic</title>
+    <link rel="stylesheet" href="../css/Rjguitars.css">
 </head>
 <body>
 
-    <section class="head">
-        <h1>Premium Tone, Accessible Pricing</h1>
-        <p>Designed for Filipino musicians. Ready for practice and the main stage.</p>
-        <a href="#acoustic">Acoustic</a>
-        <a href="#electric">Electric</a>
-        <a href="#bass">Bass</a>
-        <a href="#accessories">Accessories</a>
-    </section>
+<section class="head">
+    <h1>Premium Tone, Accessible Pricing</h1>
+    <p>Designed for Filipino musicians. Ready for practice and the main stage.</p>
+    <a href="#acoustic">Acoustic</a>
+    <a href="#electric">Electric</a>
+    <a href="#bass">Bass</a>
+    <a href="#accessories">Accessories</a>
+</section>
 
-    <section id="acoustic">
-        <h2>RJ Acoustic Guitars</h2>
-        <div class="productlist">
+<section id="acoustic">
+    <h2>RJ Acoustic Guitars</h2>
+    <div class="productlist">
 
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar1.jpg" alt="Acoustic">
-                </div>
-                <h3>Premium Acoustic Guitar - Chuck</h3>
-                <p class="price">₱6,499.00</p>
-                <button>View Bundle</button>
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar1.jpg" alt="RJ Premium Acoustic Guitar">
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar2.jpg" alt="Acoustic">
-                </div>
-                <h3>RJ Professional Acoustics Folk</h3>
-                <p class="price">₱7,490.00</p>
-                <button>View Bundle</button>
+            <h3>Premium Acoustic Guitar - Chuck</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱6,499.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱6,849.00</span></div>
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar3.jpg" alt="Acoustic">
-                </div>
-                <h3>Travel Series Premium Acoustic Guitar</h3>
-                <p class="price">₱9,400.00</p>
-                <button>View Bundle</button>
+            <div class="stock">
+                <p>Sold: 5</p>
+                <p>Stock Remaining: 4</p>
             </div>
-
+            <button>Buy</button>
         </div>
-    </section>
 
-    <section id="electric">
-        <h2>RJ Electric Guitars</h2>
-        <div class="productlist">
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar1.jpg" alt="Electric">
-                </div>
-                <h3>Debut - Skycaster Electric Guitar</h3>
-                <p class="price">₱6,999.00</p>
-                <button>View Bundle</button>
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar2.jpg" alt="RJ Professional Acoustic Guitar">
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar2.jpg" alt="Electric">
-                </div>
-                <h3>Gigline - Skycaster Alnico Pickup Electric Guitar (Stratocaster) with Mirror Tone Pickups</h3>
-                <p class="price">₱11,890.00</p>
-                <button>View Bundle</button>
+            <h3>RJ Professional Acoustics Folk</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱7,490.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱7,840.00</span></div>
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar3.jpg" alt="Electric">
-                </div>
-                <h3>Debut -Tonecaster Electric Guitar</h3>
-                <p class="price">₱6,700.00</p>
-                <button>View Bundle</button>
+            <div class="stock">
+                <p>Sold: 4</p>
+                <p>Stock Remaining: 3</p>
             </div>
-
+            <button>Buy</button>
         </div>
-    </section>
 
-    <section id="bass">
-        <h2>RJ Bass Guitars</h2>
-        <div class="productlist">
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar1.jpg" alt="Bass">
-                </div>
-                <h3>Jazzcaster Bass Guitar with Bag, Cable, Strap (Jazz Bass)</h3>
-                <p class="price">₱7,499.00</p>
-                <button>View Bundle</button>
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar3.jpg" alt="RJ Travel Series Acoustic Guitar">
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar2.jpg" alt="Bass">
-                </div>
-                <h3>Basic Electrics Debut - Boomcaster Bass</h3>
-                <p class="price">₱7,890.00</p>
-                <button>View Bundle</button>
+            <h3>Travel Series Premium Acoustic Guitar</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱9,400.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱9,750.00</span></div>
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="guitar3.jpg" alt="Bass">
-                </div>
-                <h3>RJ Gigline - Boomcaster Bass Alnico Pickup</h3>
-                <p class="price">₱11,200.00</p>
-                <button>View Bundle</button>
+            <div class="stock">
+                <p>Sold: 3</p>
+                <p>Stock Remaining: 2</p>
             </div>
-
+            <button>Buy</button>
         </div>
-    </section>
 
-    <section id="accessories">
-        <h2>RJ Guitar Accessories</h2>
-        <div class="productlist">
+    </div>
+</section>
 
-            <div class="products">
-                <div class="productimg">
-                    <img src="accessory1.jpg" alt="Amplifier">
-                </div>
-                <h3>Basics Electric Amplifier</h3>
-                <p class="price">₱2,500.00</p>
-                <button>Add to Bag</button>
+<section id="electric">
+    <h2>RJ Electric Guitars</h2>
+    <div class="productlist">
+
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar4.jpg" alt="RJ Debut Skycaster Electric Guitar">
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="accessory2.jpg" alt="Capo">
-                </div>
-                <h3>Basics Plastic Capo (Assorted Color)</h3>
-                <p class="price">₱99.00</p>
-                <button>Add to Bag</button>
+            <h3>Debut - Skycaster Electric Guitar</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱6,999.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱300.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱7,299.00</span></div>
             </div>
-
-            <div class="products">
-                <div class="productimg">
-                    <img src="accessory3.jpg" alt="Strings">
-                </div>
-                <h3>RJ Premium Classical Guitar Strings</h3>
-                <p class="price">₱349.00</p>
-                <button>Add to Bag</button>
+            <div class="stock">
+                <p>Sold: 6</p>
+                <p>Stock Remaining: 4</p>
             </div>
-
+            <button>Buy</button>
         </div>
-    </section>
+
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar5.jpg" alt="RJ Gigline Skycaster Electric Guitar">
+            </div>
+            <h3>Gigline - Skycaster Alnico Pickup Electric Guitar (Stratocaster) with Mirror Tone Pickups</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱11,890.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱300.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱12,190.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 3</p>
+                <p>Stock Remaining: 2</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar6.jpg" alt="RJ Debut Tonecaster Electric Guitar">
+            </div>
+            <h3>Debut - Tonecaster Electric Guitar</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱6,700.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱300.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱7,000.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 5</p>
+                <p>Stock Remaining: 4</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="bass">
+    <h2>RJ Bass Guitars</h2>
+    <div class="productlist">
+
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar7.jpg" alt="RJ Jazzcaster Bass Guitar">
+            </div>
+            <h3>Jazzcaster Bass Guitar with Bag, Cable, Strap (Jazz Bass)</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱7,499.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱7,849.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 4</p>
+                <p>Stock Remaining: 3</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="products">
+            <div class="productimg">
+                <img src="guitar8.jpg" alt="RJ Debut Boomcaster Bass">
+            </div>
+            <h3>Basic Electrics Debut - Boomcaster Bass</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱7,890.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱8,240.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 3</p>
+                <p>Stock Remaining: 3</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="accessories">
+    <h2>RJ Guitars Accessories</h2>
+    <div class="productlist">
+
+        <div class="products">
+            <div class="productimg">
+                <img src="accessory1.jpg" alt="RJ Basics Electric Amplifier">
+            </div>
+            <h3>Basics Electric Amplifier</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱2,500.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱200.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱2,700.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 5</p>
+                <p>Stock Remaining: 4</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="products">
+            <div class="productimg">
+                <img src="accessory2.jpg" alt="RJ Basics Plastic Capo">
+            </div>
+            <h3>Basics Plastic Capo (Assorted Color)</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱99.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱80.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱179.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 12</p>
+                <p>Stock Remaining: 10</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+        <div class="products">
+            <div class="productimg">
+                <img src="accessory3.jpg" alt="RJ Premium Classical Guitar Strings">
+            </div>
+            <h3>RJ Premium Classical Guitar Strings</h3>
+            <div class="price">
+                <div class="priceList"><span>Product Price</span><span>₱349.00</span></div>
+                <div class="priceList"><span>Shipping Fee</span><span>₱80.00</span></div>
+                <div class="priceList total"><span>Total Cost</span><span>₱429.00</span></div>
+            </div>
+            <div class="stock">
+                <p>Sold: 10</p>
+                <p>Stock Remaining: 8</p>
+            </div>
+            <button>Buy</button>
+        </div>
+
+    </div>
+</section>
 
     <footer class="footer">
-        <a href="fretAbout.html">About Us</a>
+        <a href="#top">Back to Top</a>
     </footer>
-
 </body>
 </html>

@@ -1,32 +1,35 @@
-
 html, body {
     min-height: 100%;
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: radial-gradient(
-        circle at bottom,
-        #555555 0%,
-        #000000 80%
-    );
+    background-color: #f5f5f5;
 }
 
 .head {
-    padding: 10px 20px;
-    background-color: #222222;
+    min-height: 100px;
+    padding: 10px 5%;
+    background-color: #000000;
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .logo {
-    height: 50px;
-    width: auto;
+    display: block;
+    width: 185px;
+    height: 80px;
+    object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -47,19 +50,76 @@ body {
     text-decoration: underline;
 }
 
-main {
+#services {
+    padding: 30px 5%;
     flex: 1;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.videolist {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 300px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-top: 4px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.video img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border: 1px solid #000000;
+}
+
+.video h3 {
+    font-size: 18px;
+    color: #000000;
+}
+
+.video p {
+    color: #555555;
+    font-size: 14px;
+}
+
+.watch {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #000000;
+}
+
+.watch:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .footer {
     margin-top: auto;
     text-align: center;
     padding: 15px;
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .footer a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;

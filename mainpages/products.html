@@ -4,176 +4,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fretastic Products</title>
+    <title>Fretastic: Products</title>
     <link rel="stylesheet" href="../css/Products.css">
 </head>
 <body>
 
     <header class="head">
-        <div>
-            <img src="../images/fretastic.png" class="logo" alt="Fretastic Logo">
-        </div>
+  <div> 
+    <img src="../images/Fretasticcc.png" class="logo" alt="Fretastic Logo">
+  </div>
 
-        <nav class="nav">
-            <a href="home.html"><strong>Home</strong></a>
-            <a href="products.html"><strong>Products</strong></a>
-            <a href="services.html"><strong>Services</strong></a>
-            <a href="contact.html"><strong>Contact</strong></a>
-        </nav>
-    </header>
+  <nav class="nav">
+    <a href="home.html" target="_self"><strong>Home</strong></a>
+    <a href="products.html" target="_self"><strong>Products</strong></a>
+    <a href="services.html" target="_self"><strong>Services</strong></a>
+    <a href="contact.html" target="_self"><strong>Contact</strong></a>
+  </nav>
+</header>
 
     <main class="box">
-        <div class="boxContent">
+        <div class="content">
 
-            <!-- Menu group controls -->
-            <input type="radio" id="group-1" name="menu-toggle" checked>
-            <input type="radio" id="group-2" name="menu-toggle">
+            <input type="radio" id="group1" name="menu" checked>
+            <input type="radio" id="group2" name="menu">
 
-            <!-- Brand controls -->
-            <input type="radio" id="tab-clifton" name="brand-group" checked>
-            <input type="radio" id="tab-ligaya" name="brand-group">
-            <input type="radio" id="tab-rjguitars" name="brand-group">
-            <input type="radio" id="tab-fermata" name="brand-group">
-            <input type="radio" id="tab-fernando" name="brand-group">
-            <input type="radio" id="tab-alegre" name="brand-group">
-            <input type="radio" id="tab-jcraft" name="brand-group">
-            <input type="radio" id="tab-dd" name="brand-group">
+            <input type="radio" id="clifton" name="brand-group" checked>
+            <input type="radio" id="ligaya" name="brand-group">
+            <input type="radio" id="rjguitars" name="brand-group">
+            <input type="radio" id="fermata" name="brand-group">
+            <input type="radio" id="fernando" name="brand-group">
+            <input type="radio" id="alegre" name="brand-group">
+            <input type="radio" id="jcraft" name="brand-group">
+            <input type="radio" id="dd" name="brand-group">
 
-            <!-- First menu group -->
-            <div class="menu-section menu-group-1">
-                <label for="group-2" class="arrow">❮</label>
+            <div class="menusec menugroup1">
+                <label for="group2" class="arrow">❮</label>
 
                 <div class="links">
-                    <label for="tab-clifton">Clifton</label>
-                    <label for="tab-ligaya">Ligaya</label>
-                    <label for="tab-rjguitars">RJ Guitars</label>
-                    <label for="tab-fermata">Fermata</label>
+                    <label for="clifton">Clifton</label>
+                    <label for="ligaya">Ligaya</label>
+                    <label for="rjguitars">RJ Guitars</label>
+                    <label for="fermata">Fermata</label>
                 </div>
 
-                <label for="group-2" class="arrow">❯</label>
+                <label for="group2" class="arrow">❯</label>
             </div>
 
-            <!-- Second menu group -->
-            <div class="menu-section menu-group-2">
-                <label for="group-1" class="arrow">❮</label>
+            <div class="menusec menugroup2">
+                <label for="group1" class="arrow">❮</label>
 
                 <div class="links">
-                    <label for="tab-fernando">Fernando</label>
-                    <label for="tab-alegre">Alegre</label>
-                    <label for="tab-jcraft">JCraft</label>
-                    <label for="tab-dd">D&amp;D</label>
+                    <label for="fernando">Fernando</label>
+                    <label for="alegre">Alegre</label>
+                    <label for="jcraft">JCraft</label>
+                    <label for="dd">D&amp;D</label>
                 </div>
 
-                <label for="group-1" class="arrow">❯</label>
+                <label for="group1" class="arrow">❯</label>
             </div>
 
-            <!-- Clifton -->
-            <div class="brand-panel brand-clifton">
-                <p class="boxText">
+            <div class="panel brandClifton">
+                <p class="text">
                     Brand:
-                    <a href="../brands/clifton.html" class="brand-link">
-                        Clifton<span class="hover-text">(See full products for Clifton)</span>
+                    <a href="../brands/clifton.html" class="brandLink">
+                        Clifton<span class="hoverText">(See full products for Clifton)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
+                    <div class="product"><img src="" alt="Clifton"></div>
                     <div class="product"><img src="" alt="Clifton"></div>
                     <div class="product"><img src="" alt="Clifton"></div>
                 </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="Clifton"></div>
+                    <div class="product"><img src="" alt="Clifton"></div>
+                    <div class="product"><img src="" alt="Clifton"></div>
+                </div>
             </div>
 
-            <!-- Ligaya -->
-            <div class="brand-panel brand-ligaya">
-                <p class="boxText">
+            <div class="panel brandLigaya">
+                <p class="text">
                     Brand:
-                    <a href="../brands/ligaya.html" class="brand-link">
-                        Ligaya<span class="hover-text">(See full products for Ligaya)</span>
+                    <a href="../brands/ligaya.html" class="brandLink">
+                        Ligaya<span class="hoverText">(See full products for Ligaya)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
                     <div class="product"><img src="" alt="Ligaya"></div>
                     <div class="product"><img src="" alt="Ligaya"></div>
+                    <div class="product"><img src="" alt="Ligaya"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="Ligaya"></div>
+                    <div class="product"><img src="" alt="Ligaya"></div>
+                    <div class="product"><img src="" alt="Ligaya"></div>
                 </div>
             </div>
 
-            <!-- RJ Guitars -->
-            <div class="brand-panel brand-rjguitars">
-                <p class="boxText">
+            <div class="panel brandRJGuitars">
+                <p class="text">
                     Brand:
-                    <a href="../brands/rjguitars.html" class="brand-link">
-                        RJ Guitars<span class="hover-text">(See full products for RJ Guitars)</span>
+                    <a href="../brands/rjguitars.html" class="brandLink">
+                        RJ Guitars<span class="hoverText">(See full products for RJ Guitars)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
                     <div class="product"><img src="" alt="RJ Guitars"></div>
                     <div class="product"><img src="" alt="RJ Guitars"></div>
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
+                    <div class="product"><img src="" alt="RJ Guitars"></div>
                 </div>
             </div>
 
-            <!-- Fermata -->
-            <div class="brand-panel brand-fermata">
-                <p class="boxText">
+            <div class="panel brandFermata">
+                <p class="text">
                     Brand:
-                    <a href="../brands/fermata.html" class="brand-link">
-                        Fermata<span class="hover-text">(See full products for Fermata)</span>
+                    <a href="../brands/fermata.html" class="brandLink">
+                        Fermata<span class="hoverText">(See full products for Fermata)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
                     <div class="product"><img src="" alt="Fermata"></div>
                     <div class="product"><img src="" alt="Fermata"></div>
+                    <div class="product"><img src="" alt="Fermata"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="Fermata"></div>
+                    <div class="product"><img src="" alt="Fermata"></div>
+                    <div class="product"><img src="" alt="Fermata"></div>
                 </div>
             </div>
 
-            <!-- Fernando -->
-            <div class="brand-panel brand-fernando">
-                <p class="boxText">
+            <div class="panel brandFernando">
+                <p class="text">
                     Brand:
-                    <a href="../brands/fernando.html" class="brand-link">
-                        Fernando<span class="hover-text">(See full products for Fernando)</span>
+                    <a href="../brands/fernando.html" class="brandLink">
+                        Fernando<span class="hoverText">(See full products for Fernando)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
                     <div class="product"><img src="" alt="Fernando"></div>
                     <div class="product"><img src="" alt="Fernando"></div>
+                    <div class="product"><img src="" alt="Fernando"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="Fernando"></div>
+                    <div class="product"><img src="" alt="Fernando"></div>
+                    <div class="product"><img src="" alt="Fernando"></div>
                 </div>
             </div>
 
-            <!-- Alegre -->
-            <div class="brand-panel brand-alegre">
-                <p class="boxText">
+            <div class="panel brandAlegre">
+                <p class="text">
                     Brand:
-                    <a href="../brands/alegre.html" class="brand-link">
-                        Alegre<span class="hover-text">(See full products for Alegre)</span>
+                    <a href="../brands/alegre.html" class="brandLink">
+                        Alegre<span class="hoverText">(See full products for Alegre)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
                     <div class="product"><img src="" alt="Alegre"></div>
                     <div class="product"><img src="" alt="Alegre"></div>
+                    <div class="product"><img src="" alt="Alegre"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="Alegre"></div>
+                    <div class="product"><img src="" alt="Alegre"></div>
+                    <div class="product"><img src="" alt="Alegre"></div>
                 </div>
             </div>
 
-            <!-- J.Craft -->
-            <div class="brand-panel brand-jcraft">
-                <p class="boxText">
+            <div class="panel brandJcraft">
+                <p class="text">
                     Brand:
-                    <a href="../brands/jcraft.html" class="brand-link">
-                        JCraft<span class="hover-text">(See full products for JCraft)</span>
+                    <a href="../brands/jcraft.html" class="brandLink">
+                        JCraft<span class="hoverText">(See full products for JCraft)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
+                    <div class="product"><img src="" alt="JCraft"></div>
+                    <div class="product"><img src="" alt="JCraft"></div>
+                    <div class="product"><img src="" alt="JCraft"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="JCraft"></div>
                     <div class="product"><img src="" alt="JCraft"></div>
                     <div class="product"><img src="" alt="JCraft"></div>
                 </div>
             </div>
 
-            <!-- D&D -->
-            <div class="brand-panel brand-dd">
-                <p class="boxText">
+            <div class="panel brandDd">
+                <p class="text">
                     Brand:
-                    <a href="../brands/d&d.html" class="brand-link">
-                        D&amp;D<span class="hover-text">(See full products for D&amp;D)</span>
+                    <a href="../brands/d&d.html" class="brandLink">
+                        D&amp;D<span class="hoverText">(See full products for D&amp;D)</span>
                     </a>
                 </p>
-                <div class="boxNav">
+                <div class="nav">
+                    <div class="product"><img src="" alt="D&amp;D"></div>
+                    <div class="product"><img src="" alt="D&amp;D"></div>
+                    <div class="product"><img src="" alt="D&amp;D"></div>
+                </div>
+                <div class="nav">
+                    <div class="product"><img src="" alt="D&amp;D"></div>
                     <div class="product"><img src="" alt="D&amp;D"></div>
                     <div class="product"><img src="" alt="D&amp;D"></div>
                 </div>

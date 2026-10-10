@@ -1,29 +1,35 @@
-
-html,
-body {
+html, body {
     min-height: 100%;
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #000000, #555555);
+    background-color: #f5f5f5;
 }
 
 .head {
-    padding: 10px 20px;
-    background-color: #222222;
+    min-height: 100px;
+    padding: 10px 5%;
+    background-color: #000000;
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .logo {
-    height: 50px;
-    width: auto;
+    display: block;
+    width: 185px;
+    height: 80px;
+    object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -50,26 +56,26 @@ body {
     align-items: center;
     flex: 1;
     padding: 40px 20px;
-    box-sizing: border-box;
 }
 
-.boxContent {
+.content {
     width: fit-content;
     max-width: 100%;
-    box-sizing: border-box;
-    background-color: #333333;
-    border: 2px solid #222222;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-top: 4px solid #000000;
     padding: 45px;
-    border-radius: 12px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.menu-section {
-    display: flex;
+.menusec {
+    display: none;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #222222;
+    border-bottom: 2px solid #dddddd;
     padding-bottom: 15px;
 }
 
@@ -79,7 +85,7 @@ body {
 }
 
 .links label {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     cursor: pointer;
 }
@@ -89,7 +95,7 @@ body {
 }
 
 .arrow {
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -100,38 +106,33 @@ body {
     opacity: 0.7;
 }
 
-.boxText {
+.text {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     margin-top: 0;
     margin-bottom: 25px;
 }
 
-.brand-link {
-    color: #ffffff;
+.brandLink {
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
 
-.brand-link:hover {
+.brandLink:hover {
     text-decoration: underline;
 }
 
-.hover-text {
+.hoverText {
     display: none;
     font-size: 14px;
-    color: #aaaaaa;
+    color: #666666;
     margin-left: 10px;
     font-weight: normal;
 }
 
-.brand-link:hover .hover-text {
+.brandLink:hover .hoverText {
     display: inline;
-}
-
-.boxNav {
-    display: flex;
-    gap: 20px;
 }
 
 .product {
@@ -142,8 +143,7 @@ body {
     display: block;
     width: 180px;
     height: 150px;
-    box-sizing: border-box;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     border-radius: 8px;
     margin-bottom: 5px;
     object-fit: contain;
@@ -153,7 +153,7 @@ body {
     margin-top: auto;
     text-align: center;
     padding: 15px;
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .footer a {
@@ -171,64 +171,25 @@ input[type="radio"] {
     display: none;
 }
 
-.menu-section,
-.brand-panel {
+.panel {
     display: none;
 }
 
-#group-1:checked ~ .menu-group-1 {
+#group1:checked ~ .menugroup1 {
     display: flex;
 }
 
-#group-2:checked ~ .menu-group-2 {
+#group2:checked ~ .menugroup2 {
     display: flex;
 }
 
-#tab-clifton:checked ~ .brand-clifton,
-#tab-ligaya:checked ~ .brand-ligaya,
-#tab-rjguitars:checked ~ .brand-rjguitars,
-#tab-fermata:checked ~ .brand-fermata,
-#tab-fernando:checked ~ .brand-fernando,
-#tab-alegre:checked ~ .brand-alegre,
-#tab-jcraft:checked ~ .brand-jcraft,
-#tab-dd:checked ~ .brand-dd {
+#clifton:checked ~ .brandClifton,
+#ligaya:checked ~ .brandLigaya,
+#rjguitars:checked ~ .brandRJGuitars,
+#fermata:checked ~ .brandFermata,
+#fernando:checked ~ .brandFernando,
+#alegre:checked ~ .brandAlegre,
+#jcraft:checked ~ .brandJcraft,
+#dd:checked ~ .brandDD {
     display: block;
-}
-
-@media (max-width: 700px) {
-    .head {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .box {
-        align-items: flex-start;
-    }
-
-    .boxContent {
-        padding: 20px;
-    }
-
-    .menu-section {
-        gap: 10px;
-    }
-
-    .links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .boxNav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
