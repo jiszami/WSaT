@@ -1,0 +1,154 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #555555, #000000);
+}
+
+.head {
+    padding: 15px 20px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.head h1 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 30px 20px;
+}
+
+.content {
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+    background-color: #333333;
+    border: 2px solid #222222;
+    padding: 45px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pick {
+    flex: 1;
+    min-width: 0;
+    padding: 25px 20px;
+    background-color: #3b3b3b;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pick h2 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pick p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222222;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .head {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .head h1 {
+        font-size: 22px;
+    }
+
+    .box {
+        padding: 25px 15px;
+    }
+
+    .content {
+        padding: 25px 20px;
+    }
+
+    .choice {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pick {
+        padding: 25px 15px;
+    }
+}

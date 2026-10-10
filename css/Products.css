@@ -1,5 +1,4 @@
 
-/* General page layout */
 html,
 body {
     min-height: 100%;
@@ -14,7 +13,6 @@ body {
     background: linear-gradient(180deg, #000000, #555555);
 }
 
-/* Header */
 .head {
     padding: 10px 20px;
     background-color: #222222;
@@ -28,7 +26,6 @@ body {
     width: auto;
 }
 
-/* Navigation */
 .nav {
     display: flex;
     gap: 50px;
@@ -47,7 +44,6 @@ body {
     text-decoration: underline;
 }
 
-/* Main content */
 .box {
     display: flex;
     justify-content: center;
@@ -67,7 +63,6 @@ body {
     border-radius: 12px;
 }
 
-/* Brand menus */
 .menu-section {
     display: flex;
     align-items: center;
@@ -93,7 +88,6 @@ body {
     text-decoration: underline;
 }
 
-/* Menu arrows */
 .arrow {
     color: #ffffff;
     font-size: 20px;
@@ -106,7 +100,6 @@ body {
     opacity: 0.7;
 }
 
-/* Brand heading */
 .boxText {
     font-size: 18px;
     color: #ffffff;
@@ -136,7 +129,6 @@ body {
     display: inline;
 }
 
-/* Product images */
 .boxNav {
     display: flex;
     gap: 20px;
@@ -157,7 +149,6 @@ body {
     object-fit: contain;
 }
 
-/* Footer */
 .footer {
     margin-top: auto;
     text-align: center;
@@ -176,18 +167,15 @@ body {
     text-decoration: underline;
 }
 
-/* Hide radio buttons */
 input[type="radio"] {
     display: none;
 }
 
-/* Hide menus and brand panels initially */
 .menu-section,
 .brand-panel {
     display: none;
 }
 
-/* Show selected menu group */
 #group-1:checked ~ .menu-group-1 {
     display: flex;
 }
@@ -196,7 +184,6 @@ input[type="radio"] {
     display: flex;
 }
 
-/* Show selected brand panel */
 #tab-clifton:checked ~ .brand-clifton,
 #tab-ligaya:checked ~ .brand-ligaya,
 #tab-rjguitars:checked ~ .brand-rjguitars,
@@ -208,7 +195,6 @@ input[type="radio"] {
     display: block;
 }
 
-/* Responsive layout */
 @media (max-width: 700px) {
     .head {
         flex-direction: column;
