@@ -3,10 +3,6 @@ html, body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -24,13 +20,10 @@ body {
 }
 
 .logo {
-    display: block;
     width: 185px;
     height: 80px;
-    object-fit: contain;
-    object-position: left center;
-    flex-shrink: 0;
 }
+
 
 .nav {
     display: flex;
@@ -66,22 +59,20 @@ body {
     border-top: 4px solid #000000;
     padding: 45px;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .menusec {
     display: none;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 2px solid #000000;
     padding-bottom: 15px;
 }
 
 .links {
     display: flex;
-    gap: 25px;
+    gap: 55px;
 }
 
 .links label {
@@ -99,17 +90,15 @@ body {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    user-select: none;
 }
 
 .arrow:hover {
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
 .text {
     font-size: 18px;
     color: #000000;
-    margin-top: 0;
     margin-bottom: 25px;
 }
 
@@ -127,16 +116,12 @@ body {
     display: none;
     font-size: 14px;
     color: #666666;
-    margin-left: 10px;
+    margin-left: 30px;
     font-weight: normal;
 }
 
 .brandLink:hover .hoverText {
     display: inline;
-}
-
-.product {
-    text-align: center;
 }
 
 .product img {
@@ -150,7 +135,6 @@ body {
 }
 
 .footer {
-    margin-top: auto;
     text-align: center;
     padding: 15px;
     background-color: #000000;
