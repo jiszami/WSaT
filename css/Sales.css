@@ -1,0 +1,183 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.head {
+    min-height: 100px;
+    padding: 10px 5%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 185px;
+    height: 80px;
+}
+
+.head h1 {
+    color: #ffffff;
+    margin: 25px;
+    font-size: 30px;
+}
+
+nav {
+display: flex;
+gap: 35px;
+margin-left: auto;
+}
+
+nav a {
+text-decoration: none;
+color: #ffffff;
+font-size: 16px;
+}
+
+nav a {
+text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-top: 4px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.intro {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-left: 5px solid #000000;
+}
+
+.intro h2 {
+    margin: 0 0 10px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.intro p {
+    margin: 0;
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    color: #000000;
+    font-size: 22px;
+    border-bottom: none;
+}
+
+.earnings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    padding: 25px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #d6d6d6;
+    border-top: 4px solid #000000;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.box p {
+    margin: 0 0 15px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.box h3 {
+    margin: 0;
+    color: #000000;
+    font-size: 24px;
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.earningsTbl {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.earningsTbl th,
+.earningsTbl td {
+    padding: 15px 12px;
+    border: 1px solid #d6d6d6;
+    text-align: center;
+}
+
+.earningsTbl thead {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.earningsTbl thead th {
+    font-weight: bold;
+}
+
+.earningsTbl tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.earningsTbl tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+.earningsTbl tfoot {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

@@ -24,12 +24,6 @@ body {
     height: 80px;
 }
 
-.head h1 {
-    color: #ffffff;
-    margin: 25px;
-    font-size: 30px;
-}
-
 .box {
     flex: 1;
     display: flex;
