@@ -155,7 +155,6 @@ main {
     border: 1px solid #dddddd;
     border-top: 3px solid #000000;
     border-radius: 2px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .producontent img {
@@ -247,4 +246,106 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .head {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .head h1 {
+        font-size: 26px;
+        margin: 15px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    main {
+        box-sizing: border-box;
+    }
+
+    .top {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .products,
+    .reviews {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px 15px;
+    }
+
+    .top {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .products,
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+
+    .producontent,
+    .statements {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 21px;
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .top {
+        grid-template-columns: 1fr;
+    }
+
+    .intro p,
+    .producontent p,
+    .statements p {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 12px;
+    }
 }

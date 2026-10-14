@@ -18,7 +18,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 .logo {
     width: 185px;
     height: 80px;
@@ -60,7 +59,6 @@ main {
     border: 1px solid #d6d6d6;
     border-top: 4px solid #000000;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .intro {
@@ -100,7 +98,6 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
 .box {
     padding: 25px 20px;
     background-color: #f5f5f5;
@@ -179,5 +176,57 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .head h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .earnings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table {
+        overflow-x: auto;
+    }
+
+    .earningsTbl {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .earnings {
+        grid-template-columns: 1fr;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
 }
 

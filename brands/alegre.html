@@ -1,506 +1,249 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alegre Guitars and Accessories</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+    <head>
 
-        .head {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            text-align: center;
-            padding: 30px 20px;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .head h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+        <title>Alegre Guitars and Accessories</title>
 
-        .head p {
-            font-size: 1.1rem;
-            color: #cccccc;
-            margin-bottom: 30px;
-        }
+        <link rel="stylesheet" href="../css/Alegre.css">
 
-        .head a {
-            display: inline-block;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-            text-transform: uppercase;
-            transition: background-color 0.2s, color 0.2s;
-        }
+    </head>
 
-        .head a:hover {
-            background-color: #333333;
-            color: #ffffff;
-        }
+    <body>
 
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
+        <section class="head"><h1>Premium Tone, Accessible Pricing</h1><p>Designed for Filipino musicians. Ready for practice and the main stage.</p>
+            
+            <a href="#acoustic">Acoustic</a>
+            <a href="#electric">Electric</a>
+            <a href="#bass">Bass</a>
+            <a href="#accessories">Accessories</a>
 
-        section h2 {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            border-bottom: 2px solid #000000;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
+        </section>
 
-        .productlist {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
+        <section id="acoustic"><h2>Ligaya Acoustic Guitars</h2>
 
-        .products {
-            background-color: #ffffff;
-            border: 1px solid #e5e5e5;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
+            <div class="productlist">
 
-        .productimg {
-            width: 180px;
-            height: 150px;
-            box-sizing: border-box;
-            border: 2px solid #ffffff;
-            border-radius: 8px;
-            margin-bottom: 5px;
-            background-color: #333333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
+                <div class="products">
 
-        .productimg img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-        }
+                    <div class="productimg">
+                        <img src="guitar1.jpg" alt="Ligaya Acoustic">
+                    </div>
 
-        .stock-info {
-            width: 100%;
-            margin: 5px 0 15px;
-            font-size: 0.9rem;
-            color: #555555;
-        }
+                    <h3>LGY Guitars V Series: V36-W and V36-M</h3>
 
-        .stock-info p {
-            margin: 5px 0;
-        }
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱7,799.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱8,149.00</span></div>
+                    </div>
 
-        .products h3 {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
+                    <div class="stock">
+                        <p>Sold: 3</p>
+                        <p>Stock Remaining: 2</p>
+                    </div>
 
-        .price-details {
-            width: 100%;
-            margin: 10px 0 20px;
-            font-size: 0.95rem;
-        }
+                    <button>Buy</button>
 
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            padding: 6px 0;
-        }
-
-        .price-row span:last-child {
-            text-align: right;
-        }
-
-        .price-row.total {
-            border-top: 1px solid #cccccc;
-            margin-top: 5px;
-            padding-top: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-
-        .products button {
-            background-color: #000000;
-            color: #ffffff;
-            border: none;
-            padding: 12px;
-            width: 100%;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
-        .products button:hover {
-            background-color: #333333;
-        }
-
-        #accessories {
-            background-color: #f0f0f0;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #222222;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-
-    <section class="head">
-        <h1>Premium Tone, Accessible Pricing</h1>
-        <p>Designed for Filipino musicians. Ready for practice and the main stage.</p>
-        <a href="#acoustic">Acoustic</a>
-        <a href="#electric">Electric</a>
-        <a href="#bass">Bass</a>
-        <a href="#accessories">Accessories</a>
-    </section>
-
-    <section id="acoustic">
-        <h2>Alegre Acoustic Guitars</h2>
-        <div class="productlist">
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
                 </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
+
+                <div class="products">
+
+                    <div class="productimg">
+                        <img src="guitar2.jpg" alt="Ligaya Acoustic">
                     </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
+
+                    <h3>LGY V Series V41-S with Stainless Steel Frets and Solid Wood Top</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱9,299.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱9,649.00</span></div>
                     </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
+
+                    <div class="stock">
+                        <p>Sold: 2</p>
+                        <p>Stock Remaining: 3</p>
                     </div>
+
+                    <button>Buy</button>
+
                 </div>
-                <button>View Bundle</button>
+
+                <div class="products">
+
+                    <div class="productimg">
+                        <img src="guitar3.jpg" alt="Ligaya Travel Guitar">
+                    </div>
+
+                    <h3>Amaya GS Mini-1 with Trussrod, 36inches Rounded Body</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱1,752.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱200.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱1,952.00</span></div>
+                    </div>
+
+                    <div class="stock">
+                        <p>Sold: 3</p>
+                        <p>Stock Remaining: 4</p>
+                    </div>
+
+                    <button>Buy</button>
+
+                </div>
+
             </div>
 
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
+        </section>
+
+        <section id="electric"><h2>Ligaya Electric Guitars</h2>
+
+            <div class="productlist">
+
+                <div class="products">
+                    
+                    <div class="productimg">
+                        <img src="guitar1.jpg" alt="Ligaya Stratocaster-Style">
+                    </div>
+
+                    <h3>GY Basic Classic — S with Guitar Amplifier</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱5,099.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱300.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱5,399.00</span></div>
+                    </div>
+
+                    <div class="stock">
+                        <p>Sold: 3</p>
+                        <p>Stock Remaining: 2</p>
+                    </div>
+
+                    <button>Buy</button>
+
                 </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
+
+                <div class="products">
+                    
+                    <div class="productimg">
+                        <img src="guitar2.jpg" alt="Ligaya Electric Guitar">
                     </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
+
+                    <h3>LGY Vintage Vibe Classic — S V2</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱8,890.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱9,240.00</span></div>
                     </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
+
+                    <div class="stock">
+                        <p>Sold: 3</p>
+                        <p>Stock Remaining: 1</p>
                     </div>
+
+                    <button>Buy</button>
+
                 </div>
-                <button>View Bundle</button>
+
+                <div class="products">
+
+                    <div class="productimg">
+                        <img src="guitar3.jpg" alt="Ligaya Double-Cutaway">
+                    </div>
+
+                    <h3>LGY Rookie Stratocaster V1</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱5,899.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱300.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱6,199.00</span></div>
+                    </div>
+
+                    <div class="stock">
+                        <p>Sold: 3</p>
+                        <p>Stock Remaining: 3</p>
+                    </div>
+
+                    <button>Buy</button>
+
+                </div>
+
             </div>
 
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="electric">
-        <h2>Alegre Electric Guitars</h2>
-        <div class="productlist">
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
+        <section id="bass"> <h2>Ligaya Bass Guitars</h2>
+
+            <div class="productlist">
+
+                <div class="products">
+
+                    <div class="productimg">
+                        <img src="guitar1.jpg" alt="Ligaya Bass Guitar">
+                    </div>
+
+                    <h3>Ligaya Bistro Jazz Bass with Roasted Maple Neck and Alder Body</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱11,299.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱350.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱11,649.00</span></div>
+                    </div>
+
+                    <div class="stock">
+                        <p>Sold: 2</p>
+                        <p>Stock Remaining: 1</p>
+                    </div>
+
+                    <button>Buy</button>
+
                 </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
+
             </div>
 
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
+        </section>
+
+        <section id="accessories"><h2>Ligaya Guitar Accessories</h2>
+
+            <div class="productlist">
+
+                <div class="products">
+
+                    <div class="productimg">
+                        <img src="accessory1.jpg" alt="Guitar Amplifier">
+                    </div>
+
+                    <h3>LGY Echo Vibe 40 Watts with Reverb and Delay Effects</h3>
+
+                    <div class="price">
+                        <div class="priceList"><span>Product Price</span><span>₱4,350.00</span></div>
+                        <div class="priceList"><span>Shipping Fee</span><span>₱150.00</span></div>
+                        <div class="priceList total"><span>Total Cost</span><span>₱4,500.00</span></div>
+                    </div>
+
+                    <div class="stock">
+                        <p>Sold: 4</p>
+                        <p>Stock Remaining: 2</p>
+                    </div>
+
+                    <button>Buy</button>
+
                 </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
+
             </div>
+            
+        </section>
 
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
-            </div>
-        </div>
-    </section>
+        <footer class="footer">
+            <a href="fretAbout.html">About Us</a>
+        </footer>
 
-    <section id="bass">
-        <h2>Alegre Bass Guitars</h2>
-        <div class="productlist">
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
-            </div>
-
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
-            </div>
-
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>View Bundle</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="accessories">
-        <h2>Alegre Guitar Accessories</h2>
-        <div class="productlist">
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>Add to Bag</button>
-            </div>
-
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>Add to Bag</button>
-            </div>
-
-            <div class="products">
-                <div class="productimg"><img src="" alt=""></div>
-                <h3></h3>
-                <div class="stock-info">
-                    <p>Sold:</p>
-                    <p>Stock Remaining:</p>
-                </div>
-                <div class="price-details">
-                    <div class="price-row">
-                        <span>Product Price:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row">
-                        <span>Shipping Fee:</span>
-                        <span></span>
-                    </div>
-                    <div class="price-row total">
-                        <span>Total Cost:</span>
-                        <span></span>
-                    </div>
-                </div>
-                <button>Add to Bag</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <a href="fretAbout.html">About Us</a>
-    </footer>
-
-</body>
+    </body>
+    
 </html>

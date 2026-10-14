@@ -111,3 +111,43 @@ border-color: #000000;
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+    .head {
+        flex-wrap: wrap;
+    }
+
+    .head h1 {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 15px 0;
+    }
+
+    input {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -118,3 +118,44 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+    .head {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    #services {
+        padding: 20px 15px;
+    }
+
+    #services h2 {
+        font-size: 24px;
+    }
+
+    .videolist {
+        justify-content: center;
+    }
+
+    .video {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .video img {
+        height: auto;
+    }
+}
