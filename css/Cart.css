@@ -1,0 +1,65 @@
+.profile-btn {
+    width: 42px;
+    height: 42px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    padding: 14px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    transform: translateX(100%);
+    z-index: 1001;
+}
+
+.cart-panel.open {
+    transform: translateX(0);
+}
+
+.cart-list p {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 8px;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: 2px solid #000000;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
