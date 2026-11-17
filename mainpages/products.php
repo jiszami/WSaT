@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../includes/auth.php';
+$user = require_login('buyer');
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +13,7 @@
 
         <title>Fretastic: Products</title>
 
+        <link rel="icon" type="image/png" href="../images/fret.png">
         <link rel="stylesheet" href="../css/Products.css">
         <link rel="stylesheet" href="../css/Cart.css">
 
@@ -27,9 +32,10 @@
 
             <nav class="nav">
 
-                <a href="home.html" target="_self"><strong>Home</strong></a>
-                <a href="products.html" target="_self"><strong>Products</strong></a>
-                <a href="services.html" target="_self"><strong>Services</strong></a>
+                <a href="home.php" target="_self"><strong>Home</strong></a>
+                <a href="products.php" target="_self"><strong>Products</strong></a>
+                <a href="services.php" target="_self"><strong>Services</strong></a>
+                <a href="logout.php"><strong>Log Out</strong></a>
 
             </nav>
     
@@ -234,7 +240,7 @@
         </main>
 
         <footer class="footer">
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
         </footer>
 
         <script src="../js/cart.js"></script>

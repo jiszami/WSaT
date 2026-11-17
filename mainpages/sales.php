@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../includes/auth.php';
+$user = require_login('seller');
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +13,8 @@
 
         <title>Fretastic: Sales</title>
 
+        <link rel="icon" type="image/png" href="../images/fret.png">
+        <link rel="icon" type="image/png" href="../images/fret.png">
         <link rel="stylesheet" href="../css/Sales.css">
         
     </head>
@@ -18,8 +24,8 @@
         <header class ="head"><img src="../images/Fretasticcc.png" class="logo" alt="Fretastic Logo"><h1>Sales Overview</h1>
 
             <nav>
-                <a href="seller.html">Dashboard</a>
-                <a href="../mainpages/landing.html">Log Out</a>
+                <a href="seller.php">Dashboard</a>
+                <a href="logout.php">Log Out</a>
             </nav>
 
         </header>

@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../includes/auth.php';
+$user = require_login('seller');
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,6 +13,8 @@
 
         <title>Fretastic: Seller Account</title>
 
+        <link rel="icon" type="image/png" href="../images/fret.png">
+        <link rel="icon" type="image/png" href="../images/fret.png">
         <link rel="stylesheet" href="../css/Seller.css">
 
     </head>
@@ -18,15 +24,15 @@
         <header class ="head"><img src="../images/Fretasticcc.png" class="logo" alt="Fretastic Logo"><h1>Seller Dashboard</h1>
 
             <nav>
-                <a href="../mainpages/sell.html">Home</a>
-                <a href="../mainpages/landing.html">Log Out</a>
+                <a href="../mainpages/sell.php">Home</a>
+                <a href="logout.php">Log Out</a>
             </nav>
 
         </header>
 
         <main>
 
-            <div class="intro"><h2>Welcome, Ligaya Guitars!</h2>
+            <div class="intro"><h2>Welcome, <?= e($user['username']) ?>!</h2>
                 <p>Manage your products, monitor your sales, and view customer reviews.</p>
             </div>
 
@@ -55,7 +61,7 @@
                 <div class="box">
                     <p>Total Sales Revenue</p>
                     <h3>₱146,913</h3>
-                    <a href="sales.html" class="seemore">See More</a>
+                    <a href="sales.php" class="seemore">See More</a>
                 </div>
                 
             </div>
