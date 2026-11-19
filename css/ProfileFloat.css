@@ -1,0 +1,26 @@
+.profile.profile-float {
+    position: fixed;
+    right: 104px;
+    bottom: 24px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.profile.profile-float .profile-btn {
+    width: 52px;
+    height: 52px;
+    background: #000000;
+}
+
+.profile.profile-float .profile-btn:hover,
+.profile.profile-float .profile-btn[aria-expanded="true"] {
+    background: #333333;
+}
+
+.profile.profile-float .profile-dropdown {
+    top: auto;
+    bottom: calc(100% + 10px);
+    left: auto;
+    right: 0;
+    transform: none;
+}

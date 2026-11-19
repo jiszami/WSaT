@@ -16,19 +16,22 @@ $user = require_login('buyer');
       <link rel="icon" type="image/png" href="../images/fret.png">
       <link rel="stylesheet" href="../css/Home.css">
       <link rel="stylesheet" href="../css/Cart.css">
+        <link rel="stylesheet" href="../css/Profile.css">
 
   </head>
 
   <body>
 
-    <header class="head"><img src="../images/Fretasticcc.png" class="logo" alt="Fretastic Logo"> 
+    <header class="head"><img src="../images/Fretasticcc.png" class="logo" alt="Fretastic Logo">
+
+      <?php require __DIR__ . '/../includes/profile_menu.php'; ?>
+
 
       <nav class="nav">
 
         <a href="home.php" target="_self"><strong>Home</strong></a>
         <a href="products.php" target="_self"><strong>Products</strong></a>
         <a href="services.php" target="_self"><strong>Services</strong></a>
-                <a href="logout.php"><strong>Log Out</strong></a>
 
       </nav>
       
@@ -76,6 +79,8 @@ $user = require_login('buyer');
 
     <script src="../js/cart.js"></script>
 
-  </body>
+  <script src="../js/profile.js"></script>
+
+    </body>
 
 </html>
